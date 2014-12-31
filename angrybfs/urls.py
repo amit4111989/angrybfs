@@ -9,6 +9,6 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^/', include(main.site.urls)),
-    url(r'^signup/', include(main.site.urls)),
+    #url(r'^/', include(main.site.urls)),
+    url(r'^register/', include("signup.urls")),
 )
